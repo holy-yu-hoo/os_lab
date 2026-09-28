@@ -3,8 +3,8 @@ project(monitor LANGUAGES C CXX)
 
 add_executable(monitor)
 
-set(SOURCES main.cpp monitor.cpp)
+set(SOURCES main.cpp)
 
-set(HEADERS monitor.h)
+set(HEADERS )
 
 target_sources(monitor PRIVATE ${SOURCES})
