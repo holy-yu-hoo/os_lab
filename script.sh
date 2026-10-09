@@ -8,7 +8,7 @@ fi
 filename="$1"
 match=$(grep -oE "Output:\s*([a-zA-Z0-9_\.-]+).*" "$filename")
 
-if [[ -z match ]]; then
+if [[ -z "$match" ]]; then
 	echo "Error: output name not found"
 fi
 
