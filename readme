@@ -1,0 +1,10 @@
+Создать образ и исполняемый файл
+
+	./build.sh
+
+запустить n контейнеров
+
+	./test.sh <n>
+
+Удалить контейнеры после теста
+	docker rm -f $(docker ps -aq --filter name=worker_)
